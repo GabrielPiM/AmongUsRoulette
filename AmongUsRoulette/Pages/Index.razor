@@ -1,7 +1,166 @@
 ﻿@page "/"
+@inject HttpClient Http
+@using Models
+@using BlazorComponentUtilities
 
-<h1>Hello, world!</h1>
 
-Welcome to your new app.
+<div class="container-primario container ">
+    <div class="container-roleta">
 
-<SurveyPrompt Title="How is Blazor working for you?" />
+        <h1>Among Roll</h1>
+
+        <Roleta IsActive="ativar"></Roleta>
+
+        <div style="@desativarBotao" class="centralizar">
+            <div class="button">
+                <a @onclick="Girar" type="button">Spin</a>
+            </div>
+        </div>
+
+        <p>(Scroll down)</p>
+    </div>
+</div>
+
+
+<div class="container-sucundario container ">
+
+    @foreach (var i in Modos)
+    {
+        <div class="modo">
+
+            <div class="centralizar">
+                <h2> @i.Name</h2>
+            </div>
+
+            <div class="centralizar">
+                <img class="img" src="@i.Img">
+            </div>
+
+            <div class="body">
+
+                <div class="centralizar">
+                    <h3> recommended Configuration</h3>>
+                </div>
+
+
+                <div class="configuration">
+
+                    <p>Map: <span>@i.Map</span></p>
+                    <p>Imposters: <span>@i.Imposter</span></p>
+                    <p>Confirm Ejects: <span>@i.ConfirmEjects</span> </p>
+                    <p>Number of Emergency Meetings: <span>@i.NumberOfEmergencyMeetings</span> </p>
+                    <p>Emergency Cooldown: <span>@i.EmergencyCooldown</span></p>
+                    <p>Player Speed: <span>@i.PlayerSpeed </span></p>
+                    <p>Discussion Time: <span>@i.DiscussionTime</span></p>
+                    <p>Voting Time: <span>@i.VotingTime</span></p>
+                    <p>Crewmate Vision: <span>@i.CrewmateVision</span> </p>
+                    <p>Imposter Vision: <span>@i.ImposterVision</span></p>
+                    <p>Kill Cooldown: <span>@i.KillCooldown</span></p>
+                    <p>Kill Distance: <span>@i.KillDistance </span></p>
+                    <p>Visual Tasks: <span>@i.VisualTasks </span></p>
+                    <p>Common Tasks: <span>@i.CommonTasks</span></p>
+                    <p>Long Tasks: <span>@i.LongTasks</span></p>
+                    <p>Short Tasks: <span>@i.ShortTasks</span></p>
+
+                </div>
+
+                <div class="centralizar">
+                    <h3> How To Play</h3>
+                </div>
+                <div class="how-to-play">
+
+                    @if (i.HowToPlayImpostor.Count > 0)
+                    {
+                        <div class="centralizar">
+                            <h4>Impostor</h4>
+                        </div>
+                        @foreach (var s in i.HowToPlayImpostor)
+                        {
+                            <ul>
+                                <li class="how-to-play-text">@s</li>
+                            </ul>
+
+                        }
+                    }
+                    @if (i.HowToPlayCrewmate.Count > 0)
+                    {
+                        <div class="centralizar">
+                            <h4>Crewmate</h4>
+                        </div>
+                        @foreach (var s in i.HowToPlayCrewmate)
+                        {
+                            <ul>
+                                <li class="how-to-play-text">@s</li>
+                            </ul>
+
+                        }
+                    }
+
+                    @if (i.HowToPlayBoth.Count > 0)
+                    {
+
+                        <div class="centralizar">
+                            <h4>Impostor <span class="fontMais">&</span> Crewmate</h4>
+                        </div>
+                        @foreach (var s in i.HowToPlayBoth)
+                        {
+                            <ul>
+                                <li class="how-to-play-text">@s</li>
+                            </ul>
+
+                        }
+                    }
+
+                </div>
+
+            </div>
+
+        </div>
+    }
+
+
+</div>
+
+@code {
+    private List<Modo> Modos;
+    public bool ativar = false;
+    string desativarBotao;
+
+
+    protected override async Task OnInitializedAsync()
+    {
+        Modos = new List<Modo>();
+        Modos = await Http.GetFromJsonAsync<List<Modo>>("data/modos.json");
+    }
+
+
+    private async void Girar()
+    {
+        ativar = true;
+        setBotao(ativar);
+        await Task.Delay(5000);
+        ativar = false;
+        await Task.Delay(1000);
+        setBotao(ativar);
+        this.StateHasChanged();
+
+
+    }
+
+    private void setBotao(bool isOn)
+    {
+        if(isOn)
+        {
+            desativarBotao = StyleBuilder.Empty()
+      .AddStyle("pointer-events", "none", when: true)
+      .Build();
+        }
+
+        else
+        {
+            desativarBotao = StyleBuilder.Empty()
+      .Build();
+        }
+    }
+
+}

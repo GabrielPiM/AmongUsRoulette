@@ -1,0 +1,53 @@
+﻿
+.roleta {
+    width: 80vw;
+    height: 30vh;
+    border-color: white;
+    border-style: solid;
+    position: relative;
+    overflow: hidden;
+    border-radius: 5em;
+    margin-bottom: 2em;
+}
+
+
+.img {
+    height: 30vh;
+    width: 30vh;
+    border-color: white;
+    border-style: solid;
+    border-width: 0.1em;
+}
+
+@media screen and (max-width: 1050px) {
+    .modo .centralizar .img {
+        min-width: 50%;
+        height: auto;
+    }
+}
+
+.dentroRoleta {
+    transition: transform 1s;
+    display: flex;
+    flex-wrap: nowrap;
+}
+
+.random {
+    transform: translate(-500em, 0px);
+}
+
+.seletor:after {
+    content: "";
+    position: absolute;
+    z-index: 2;
+    top: 0;
+    bottom: 0;
+    left: 50%;
+    border-left: 10px solid yellow;
+}
+
+@media screen and (max-width: 1050px) {
+    .seletor:after {
+        border-left: 2px solid yellow;
+    }
+}

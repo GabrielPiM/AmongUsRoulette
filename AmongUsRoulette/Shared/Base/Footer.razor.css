@@ -1,0 +1,30 @@
+﻿.footer {
+    width: 100%;
+    height: auto;
+    border-top: solid white;
+    margin-top: 5vw;
+    font-size: 1.5vw;
+    color: white;
+    padding: 2vw;
+}
+
+.footer p {
+        text-align: center;
+}
+
+@media screen and (max-width: 1050px) {
+    .footer {
+        font-size: 4.5vw;
+    }
+}
+
+.footer a {
+    text-decoration: none;
+    color: white;
+}
+
+.centralizar {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}

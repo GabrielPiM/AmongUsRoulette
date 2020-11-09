@@ -1,0 +1,65 @@
+﻿
+<div class="roleta ">
+    <div class="seletor"></div>
+
+    <div style="@classToRender" class="dentroRoleta">
+        @for (int i = 0; i < 10; i++)
+        {
+            <img class="img" src="imgs/Roleta/esconde_esconde.png">
+            <img class="img" src="imgs/Roleta/sem_cor.png">
+            <img class="img" src="imgs/Roleta/slenderman.png">
+            <img class="img" src="imgs/Roleta/it.png">
+            <img class="img" src="imgs/Roleta/pega_pega.png">
+        }
+
+    </div>
+</div>
+
+
+
+@code {
+
+    public string classToRender;
+    [Parameter]
+    public bool IsActive { get; set; }
+    public bool isFirst { get; set; }
+    public Random r;
+    public int newRandom = 0;
+    public int oldRandom = 0;
+
+
+    protected override void OnParametersSet()
+    {
+        r = new Random();
+        oldRandom = newRandom;
+        newRandom=r.Next(100,600);
+
+        if (IsActive)
+        {
+            Girar();
+            isFirst = false;
+        }
+        else if(!isFirst)
+        {
+            Voltar();
+        }
+
+    }
+
+    public void Girar()
+    {
+        classToRender = StyleBuilder.Empty()
+                      .AddStyle("transition", "transform 5s", when: true)
+                      .AddStyle("transform", $"translate(-{newRandom}em, 0px)", when: true)
+                      .Build();
+    }
+
+    public void Voltar()
+    {
+        classToRender = StyleBuilder.Empty()
+              .AddStyle("transform", $" translate({oldRandom}em, 0px)", when: false)
+              .Build(); 
+    }
+
+
+}
