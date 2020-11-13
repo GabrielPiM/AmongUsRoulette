@@ -1,0 +1,97 @@
+﻿@page "/map"
+@using Models
+@inject HttpClient Http
+@inject NavigationManager NavManager
+@implements IDisposable
+
+<div class="map-container">
+    @if (mapaAtual != null)
+    {
+        <div class="centralizar">
+
+            <h1>@mapaAtual.Title</h1>
+
+        </div>
+
+        @foreach (var mapInfo in mapaAtual.Infos)
+        {
+            <div class="map-info">
+
+                <div class="map-body">
+
+                    <div class="centralizar">
+
+                        <h3>@mapInfo.Title</h3>
+
+                    </div>
+
+                    <img src="@mapInfo.Img">
+
+                    <div class="map-text">
+                        <div class="map-text-format">
+
+                         @mapInfo.Text
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+        }
+
+    }
+
+
+</div>
+
+
+
+@code {
+
+    public string nameMap;
+    private List<Map> Mapas;
+    private Map mapaAtual;
+
+    protected override async Task OnInitializedAsync()
+    {
+        
+        Mapas = new List<Map>();
+        Mapas = await Http.GetFromJsonAsync<List<Map>>("data/MapInfos.json");
+
+        GetQueryStringValues();
+        CheckName();
+
+        NavManager.LocationChanged += HandleLocationChanged;
+
+    }
+
+    //Verifca nome do mapa
+    public void CheckName()
+    {
+        mapaAtual = Mapas.Find(m => m.Title == nameMap); 
+
+        if (mapaAtual == null)
+            mapaAtual = Mapas.Find(m => m.Title == "The Skeld");
+    }
+
+    //atualiza na mesma pagina a query string
+    void HandleLocationChanged(object sender, LocationChangedEventArgs e)
+    {
+        GetQueryStringValues();
+        CheckName();
+        StateHasChanged();
+    }
+
+    //get query string
+    void GetQueryStringValues()
+    {
+        AmongUsRoulette.Shared.Utils.NavigationManagerExtensions.TryGetQueryString<string>(NavManager, "nameMap", out nameMap);
+    }
+
+    public void Dispose()
+    {
+        NavManager.LocationChanged -= HandleLocationChanged;
+    }
+
+}

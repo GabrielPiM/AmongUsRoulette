@@ -7,10 +7,13 @@
 <div class="container-primario container ">
     <div class="container-roleta">
 
-        <h1>Among Roll</h1>
-
+        <div class="centralizar">
+            <h1>Roulette</h1>
+        </div>
+ 
+         
         <Roleta IsActive="ativar"></Roleta>
-
+         
         <div style="@desativarBotao" class="centralizar">
             <div class="button">
                 <a @onclick="Girar" type="button">Spin</a>
@@ -18,106 +21,114 @@
         </div>
 
         <p>(Scroll down)</p>
+  
     </div>
 </div>
 
 
 <div class="container-sucundario container ">
+        
+    <ScrollToMode/>
+ 
+    <div class="container-modos">
 
-    @foreach (var i in Modos)
-    {
-        <div class="modo">
+        @foreach (var i in Modos)
+        {
 
-            <div class="centralizar">
-                <h2> @i.Name</h2>
-            </div>
-
-            <div class="centralizar">
-                <img class="img" src="@i.Img">
-            </div>
-
-            <div class="body">
+            <div class="modo">
 
                 <div class="centralizar">
-                    <h3> recommended Configuration</h3>>
-                </div>
-
-
-                <div class="configuration">
-
-                    <p>Map: <span>@i.Map</span></p>
-                    <p>Imposters: <span>@i.Imposter</span></p>
-                    <p>Confirm Ejects: <span>@i.ConfirmEjects</span> </p>
-                    <p>Number of Emergency Meetings: <span>@i.NumberOfEmergencyMeetings</span> </p>
-                    <p>Emergency Cooldown: <span>@i.EmergencyCooldown</span></p>
-                    <p>Player Speed: <span>@i.PlayerSpeed </span></p>
-                    <p>Discussion Time: <span>@i.DiscussionTime</span></p>
-                    <p>Voting Time: <span>@i.VotingTime</span></p>
-                    <p>Crewmate Vision: <span>@i.CrewmateVision</span> </p>
-                    <p>Imposter Vision: <span>@i.ImposterVision</span></p>
-                    <p>Kill Cooldown: <span>@i.KillCooldown</span></p>
-                    <p>Kill Distance: <span>@i.KillDistance </span></p>
-                    <p>Visual Tasks: <span>@i.VisualTasks </span></p>
-                    <p>Common Tasks: <span>@i.CommonTasks</span></p>
-                    <p>Long Tasks: <span>@i.LongTasks</span></p>
-                    <p>Short Tasks: <span>@i.ShortTasks</span></p>
-
+                    <h2> @i.Name</h2>
                 </div>
 
                 <div class="centralizar">
-                    <h3> How To Play</h3>
+                    <img class="img" src="@i.Img">
                 </div>
-                <div class="how-to-play">
 
-                    @if (i.HowToPlayImpostor.Count > 0)
-                    {
-                        <div class="centralizar">
-                            <h4>Impostor</h4>
-                        </div>
-                        @foreach (var s in i.HowToPlayImpostor)
+                <div class="body">
+
+                    <div class="centralizar">
+                        <h3> recommended Configuration</h3>>
+                    </div>
+
+
+                    <div class="configuration">
+
+                        <p>Map: <span>@i.Map</span></p>
+                        <p>Imposters: <span>@i.Imposter</span></p>
+                        <p>Confirm Ejects: <span>@i.ConfirmEjects</span> </p>
+                        <p>Number of Emergency Meetings: <span>@i.NumberOfEmergencyMeetings</span> </p>
+                        <p>Emergency Cooldown: <span>@i.EmergencyCooldown</span></p>
+                        <p>Player Speed: <span>@i.PlayerSpeed </span></p>
+                        <p>Discussion Time: <span>@i.DiscussionTime</span></p>
+                        <p>Voting Time: <span>@i.VotingTime</span></p>
+                        <p>Crewmate Vision: <span>@i.CrewmateVision</span> </p>
+                        <p>Imposter Vision: <span>@i.ImposterVision</span></p>
+                        <p>Kill Cooldown: <span>@i.KillCooldown</span></p>
+                        <p>Kill Distance: <span>@i.KillDistance </span></p>
+                        <p>Visual Tasks: <span>@i.VisualTasks </span></p>
+                        <p>Common Tasks: <span>@i.CommonTasks</span></p>
+                        <p>Long Tasks: <span>@i.LongTasks</span></p>
+                        <p>Short Tasks: <span>@i.ShortTasks</span></p>
+
+                    </div>
+
+                    <div class="centralizar">
+                        <h3> How To Play</h3>
+                    </div>
+                    <div class="how-to-play">
+
+                        @if (i.HowToPlayImpostor.Count > 0)
                         {
-                            <ul>
-                                <li class="how-to-play-text">@s</li>
-                            </ul>
+                            <div class="centralizar">
+                                <h4>Impostor</h4>
+                            </div>
+                            @foreach (var s in i.HowToPlayImpostor)
+                            {
+                                <ul>
+                                    <li class="how-to-play-text">@s</li>
+                                </ul>
 
+                            }
                         }
-                    }
-                    @if (i.HowToPlayCrewmate.Count > 0)
-                    {
-                        <div class="centralizar">
-                            <h4>Crewmate</h4>
-                        </div>
-                        @foreach (var s in i.HowToPlayCrewmate)
+                        @if (i.HowToPlayCrewmate.Count > 0)
                         {
-                            <ul>
-                                <li class="how-to-play-text">@s</li>
-                            </ul>
+                            <div class="centralizar">
+                                <h4>Crewmate</h4>
+                            </div>
+                            @foreach (var s in i.HowToPlayCrewmate)
+                            {
+                                <ul>
+                                    <li class="how-to-play-text">@s</li>
+                                </ul>
 
+                            }
                         }
-                    }
 
-                    @if (i.HowToPlayBoth.Count > 0)
-                    {
-
-                        <div class="centralizar">
-                            <h4>Impostor <span class="fontMais">&</span> Crewmate</h4>
-                        </div>
-                        @foreach (var s in i.HowToPlayBoth)
+                        @if (i.HowToPlayBoth.Count > 0)
                         {
-                            <ul>
-                                <li class="how-to-play-text">@s</li>
-                            </ul>
 
+                            <div class="centralizar">
+                                <h4>Impostor <span class="fontMais">&</span> Crewmate</h4>
+                            </div>
+                            @foreach (var s in i.HowToPlayBoth)
+                            {
+                                <ul>
+                                    <li class="how-to-play-text">@s</li>
+                                </ul>
+
+                            }
                         }
-                    }
+
+                    </div>
 
                 </div>
 
             </div>
-
-        </div>
-    }
-
+        }
+    </div>
+   
+  
 
 </div>
 
@@ -126,6 +137,8 @@
     public bool ativar = false;
     string desativarBotao;
 
+    string GetId(int i) => "header-" + i;
+    string GetHref(int i) => "#" + GetId(i);
 
     protected override async Task OnInitializedAsync()
     {

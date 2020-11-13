@@ -1,0 +1,46 @@
+﻿.header {
+    width: 100%;
+    border-bottom: white solid 2px;
+    text-decoration:none;
+    color:white;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+li {
+    display: inline;
+    color: white;
+    font-size: 2em;
+    margin-right: 1em;
+
+    text-align: center;
+}
+
+.titulo a {
+    font-size: 2em;
+    font-weight:600;
+    margin-right: 2em;
+}
+
+@media screen and (max-width: 1050px) {
+    .titulo {
+        display: none;
+    }
+    li {
+        font-size: 7em;
+        margin: 0.4em;
+        border-bottom: white 2px solid;
+    }
+    .header ul {
+        display: flex;
+        justify-content: center;
+        padding: 0;
+    }
+    .header{
+        display: flex;
+        justify-content: center;
+        border:0;
+    }
+}

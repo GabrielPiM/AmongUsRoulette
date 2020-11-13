@@ -1,0 +1,52 @@
+﻿.scrollToMode{
+    max-width: 80%;
+    color: white;
+    font-size: 2em;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.menuScroll {
+    margin: 0;
+    margin-top: 0.5em;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.menuScroll li {
+    display: inline;
+    margin: 0.5em;
+}
+
+.centralizar] {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    font-size: 1.5em;
+}
+
+.container-scroll {
+    max-width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 3em;
+}
+
+@media screen and (max-width: 1050px) {
+    .menuScroll {
+        font-size: 3.5em;
+        justify-content: unset;
+    }
+
+    .centralizar {
+        font-size: 5.5em;
+    }
+
+    .container-scroll {
+        margin-bottom: 30em;
+    }
+}

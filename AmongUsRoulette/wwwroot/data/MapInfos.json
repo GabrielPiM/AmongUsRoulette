@@ -1,0 +1,50 @@
+[
+  {
+    "Title": "The Skeld",
+    "Infos": [
+      {
+        "Title": "About",
+        "Img": "imgs/MapInfo/TheSkeld/Mapa.png",
+        "Text": "texto de teste 1"
+      },
+      {
+        "Title": "Impostor",
+        "Img": "imgs/MapInfo/TheSkeld/Mapa.png",
+        "Text": "texto de teste 2"
+      }
+    ]
+  },
+
+  {
+    "Title": "Mira HQ",
+    "Infos": [
+      {
+        "Title": "About",
+        "Img": "imgs/MapInfo/TheSkeld/map.png",
+        "Text": "texto de teste 1"
+      },
+      {
+        "Title": "Impostor",
+        "Img": "imgs/MapInfo/TheSkeld/Mapa.png",
+        "Text": "texto de teste 2"
+      }
+    ]
+  },
+
+  {
+    "Title": "Polus",
+    "Infos": [
+      {
+        "Title": "About",
+        "Img": "imgs/MapInfo/TheSkeld/admin.png",
+        "Text": "texto de teste 1"
+      },
+      {
+        "Title": "Impostor",
+        "Img": "imgs/MapInfo/TheSkeld/Mapa.png",
+        "Text": "texto de teste 2"
+      }
+    ]
+  }
+
+]

@@ -21,71 +21,10 @@
     min-width: 25em;
 }
 
-h1 {
-    color: white;
-    font-size: 10em;
-    margin: 0;
-    white-space: nowrap;
-}
 
-@media screen and (max-width: 1050px) {
-    h1 {
-        font-size: 15em;
-        margin-bottom: 1em;
-    }
-}
 
-h2 {
-    font-size: 7em;
-    margin: 1em;
-  
-    border-bottom: solid #FFFFFF;
-    border-radius: 20px;
-    color: red;
-    height: 1em;
-    width: auto;
-    white-space: nowrap;
-}
 
-@media screen and (max-width: 1050px) {
-    h2 {
-        font-size: 13em;
-        border-radius: 10px;
-    }
-}
 
-@media screen and (max-width: 500px) {
-    h2 {
-        height: 1.12em;
-    }
-}
-
-h3 {
-    color: white;
-    font-size: 4em;
-   
-    white-space: nowrap;
-    margin-bottom: 1em;
-}
-
-@media screen and (max-width: 1050px) {
-    h3 {
-        font-size: 8em;
-    }
-}
-
-h4 {
-    color: white;
-    font-size: 2em;
-    white-space: nowrap;
-    margin-bottom: 0.5em;
-}
-
-@media screen and (max-width: 1050px) {
-    h4 {
-        font-size: 6em;
-    }
-}
 
 .centralizar {
     display: flex;
@@ -137,8 +76,7 @@ h4 {
 
 .container-modos {
     display: flex;
-    justify-content: center;
-    padding: 3vw;
+    justify-content: center;  
     flex-wrap: wrap;
     width: 100%;
 }
@@ -267,7 +205,7 @@ h4 {
     top: 10px;
     background-color: #A23939;
     -webkit-box-shadow: inset 0 1px 0 #FFE5C4, inset 0 -3px 0 #832E2E;
-    -moz-box-shadow: inset 0 1px 0 #FFE5C4, inset 0 -3pxpx 0 #832E2E;
+    -moz-box-shadow: inset 0 1px 0 #FFE5C4, inset 0 -3px 0 #832E2E;
     box-shadow: inset 0 1px 0 #FFE5C4, inset 0 -3px 0 #832E2E;
 }
 
