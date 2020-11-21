@@ -1,0 +1,161 @@
+[
+  {
+    "Name": "Color Blind",
+    "Img": "imgs/Roleta/sem_cor_noname.png",
+    "Map": "Optional",
+    "Imposter": "Optional",
+    "ConfirmEjects": "Off",
+    "NumberOfEmergencyMeetings": "Optional",
+    "EmergencyCooldown": "Optional",
+    "PlayerSpeed": "Optional",
+    "DiscussionTime": "Optional",
+    "VotingTime": "Optional",
+    "CrewmateVision": "Optional",
+    "ImposterVision": "Optional",
+    "KillCooldown": "Optional",
+    "KillDistance": "Optional",
+    "VisualTasks": "on",
+    "CommonTasks": "Optional",
+    "LongTasks": "Optional",
+    "ShortTasks": "Optional",
+    "HowToPlayImpostor": [
+    ],
+    "HowToPlayCrewmate": [
+    ],
+    "HowToPlayBoth": [
+      "Must configure their monitors to use Grayscale Mode. (black and white).",
+      "Must use indistinguishable names. Ex: 010101, IIIIIIIII."
+    ]
+  },
+  {
+    "Name": "It",
+    "Img": "imgs/Roleta/it_noname.png",
+    "Map": "Mira HQ",
+    "Imposter": "1",
+    "ConfirmEjects": "Off",
+    "NumberOfEmergencyMeetings": "0",
+    "EmergencyCooldown": "0s",
+    "PlayerSpeed": "1,25x to 1,5x",
+    "DiscussionTime": "0s",
+    "VotingTime": "0s",
+    "CrewmateVision": "Optional",
+    "ImposterVision": "Optional",
+    "KillCooldown": "10s",
+    "KillDistance": "short/medium",
+    "VisualTasks": "no",
+    "CommonTasks": "Optional",
+    "LongTasks": "Optional",
+    "ShortTasks": "Optional",
+    "HowToPlayImpostor": [
+      "Impostor reveals themselves.",
+      "The impostor can only move through vents.",
+      "The impostor can only walk in the vent room he just left.",
+      "The impostor can only kill someone within 5 seconds after leaving the vent.",
+      "No sabotaging.",
+      "Wins by killing everyone."
+
+    ],
+    "HowToPlayCrewmate": [
+      "Wins by finishing all tasks."
+    ],
+    "HowToPlayBoth": [
+      "No reporting bodies."
+    ]
+  },
+  {
+    "Name": "Hide and Seek",
+    "Img": "imgs/Roleta/esconde_esconde_noname.png",
+    "Map": "Optional",
+    "Imposter": "1",
+    "ConfirmEjects": "Off",
+    "NumberOfEmergencyMeetings": "0",
+    "EmergencyCooldown": "0s",
+    "PlayerSpeed": "1,75x",
+    "DiscussionTime": "0s",
+    "VotingTime": "0s",
+    "CrewmateVision": "1,5x",
+    "ImposterVision": "0,25 to 0,5",
+    "KillCooldown": "10s to 30s",
+    "KillDistance": "short",
+    "VisualTasks": "Off",
+    "CommonTasks": "0",
+    "LongTasks": "0",
+    "ShortTasks": "1",
+    "HowToPlayImpostor": [
+      "Impostor reveals themselves.",
+      "No sabotaging.",
+      "No venting."
+    ],
+    "HowToPlayCrewmate": [
+      "No tasks.",
+      "Last alive wins."
+    ],
+    "HowToPlayBoth": [
+      "No reporting bodies."
+    ]
+  },
+  {
+    "Name": "Slenderman",
+    "Img": "imgs/Roleta/slenderman_noname.png",
+    "Map": "Optional",
+    "Imposter": "1",
+    "ConfirmEjects": "Off",
+    "NumberOfEmergencyMeetings": "0",
+    "EmergencyCooldown": "0s",
+    "PlayerSpeed": "1x to 1,75x",
+    "DiscussionTime": "0s",
+    "VotingTime": "0s",
+    "CrewmateVision": "0,25x",
+    "ImposterVision": "5x",
+    "KillCooldown": "25s to 35s",
+    "KillDistance": "short/medium",
+    "VisualTasks": "no",
+    "CommonTasks": "2",
+    "LongTasks": "1",
+    "ShortTasks": "5",
+    "HowToPlayImpostor": [
+      "Impostor reveals themselves.",
+      "No sabotaging.",
+      "Wins by killing everyone."
+    ],
+    "HowToPlayCrewmate": [
+      "Wins by completing the 8 tasks (pages in slenderman game)."
+    ],
+    "HowToPlayBoth": [
+      "No reporting bodies."
+    ]
+  },
+  {
+    "Name": "Tag",
+    "Img": "imgs/Roleta/pega_pega_noname.png",
+    "Map": "Optional",
+    "Imposter": "1",
+    "ConfirmEjects": "Off",
+    "NumberOfEmergencyMeetings": "0",
+    "EmergencyCooldown": "0s",
+    "PlayerSpeed": "3x",
+    "DiscussionTime": "0s",
+    "VotingTime": "0s",
+    "CrewmateVision": "5x",
+    "ImposterVision": "5x",
+    "KillCooldown": "10s",
+    "KillDistance": "short",
+    "VisualTasks": "no",
+    "CommonTasks": "0",
+    "LongTasks": "0",
+    "ShortTasks": "1",
+    "HowToPlayImpostor": [
+      "Impostor reveals themselves.",
+      "No sabotaging."
+    ],
+    "HowToPlayCrewmate": [
+      "No tasks.",
+      "Last alive wins."
+
+    ],
+    "HowToPlayBoth": [
+      "No reporting bodies."
+    ]
+  }
+
+]

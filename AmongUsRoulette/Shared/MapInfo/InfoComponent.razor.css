@@ -1,0 +1,77 @@
+﻿
+.map-info {
+    width: 90%;
+    border: 0.2em solid white;
+    height: auto;
+    margin-bottom: 5em;
+    border-radius: 1em;
+}
+
+.map-body {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.map-text {
+    max-width: 80%;
+    width: 80%;
+    color: white;
+    font-size: 1.3em;
+    margin-top: 1em;
+    margin-bottom: 1em;
+    display: flex;
+    justify-content: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.map-text-format {
+    text-align: justify;
+    max-width: 90%;
+}
+
+.centralizar {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+img {
+    max-height: 50em;
+    max-width: 50em;
+    min-height: 25em;
+    min-width: 25em;
+    border: 0.1em white solid;
+}
+
+h3 {
+    font-size: 2.5em;
+    font-weight: 100;
+}
+
+@media screen and (max-width: 1050px) {
+
+
+    .map-body {
+    }
+
+    .map-container {
+    }
+
+    .map-info {
+    }
+
+    .map-text {
+        margin-top: 4em;
+    }
+
+    .map-text-format {
+        font-size: 2.3em;
+    }
+
+    img {
+        width: 100%;
+        height: auto;
+    }
+}

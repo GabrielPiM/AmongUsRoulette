@@ -1,0 +1,37 @@
+﻿@using AmongUsRoulette.Models.MapInfos
+
+@if (Infos != null)
+{
+
+    <div class="map-info">
+
+        <div class="map-body">
+
+            <div class="centralizar">
+
+                <h3>@Infos.Title</h3>
+
+            </div>
+
+            <img src="@Infos.Img">
+
+            <div class="map-text">
+                <div class="map-text-format">
+
+                    @Infos.Info
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+}
+@code {
+
+   [Parameter]
+    public InfoModel Infos { get; set; }
+}

@@ -1,0 +1,44 @@
+﻿@using AmongUsRoulette.Models.MapInfos
+
+@if (InfosList != null)
+{
+
+    <div class="map-info">
+
+        <div class="map-body">
+
+            <div class="centralizar">
+
+                <h3>@InfosList.First().Title</h3>
+
+            </div>
+            <div class="map-group">
+                @foreach (var item in InfosList)
+                {
+                    <div class="centralizar">
+
+                        <ul>
+                            @foreach (var itemName in item.Infos)
+                            {
+                                <li>@itemName</li>
+                            }
+                        </ul>
+
+                    </div>
+
+                    <img src="@item.Img">
+
+                }
+            </div>
+ 
+
+        </div>
+
+    </div>
+
+}
+@code {
+
+    [Parameter]
+    public List<InfoListModel> InfosList { get; set; }
+}

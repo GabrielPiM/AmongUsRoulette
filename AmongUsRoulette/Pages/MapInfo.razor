@@ -1,47 +1,29 @@
 ﻿@page "/map"
-@using Models
+@using AmongUsRoulette.Models.MapInfos
+@using AmongUsRoulette.Shared.MapInfo
+@inject AmongUsRoulette.Shared.Utils.CurrentLanguage language
+
 @inject HttpClient Http
 @inject NavigationManager NavManager
+
 @implements IDisposable
 
 <div class="map-container">
+
     @if (mapaAtual != null)
     {
         <div class="centralizar">
 
-            <h1>@mapaAtual.Title</h1>
+            <h1>@mapaAtual.Name</h1>
 
         </div>
 
-        @foreach (var mapInfo in mapaAtual.Infos)
-        {
-            <div class="map-info">
-
-                <div class="map-body">
-
-                    <div class="centralizar">
-
-                        <h3>@mapInfo.Title</h3>
-
-                    </div>
-
-                    <img src="@mapInfo.Img">
-
-                    <div class="map-text">
-                        <div class="map-text-format">
-
-                         @mapInfo.Text
-                        </div>
-
-                    </div>
-
-                </div>
-
-            </div>
-        }
-
+        <InfoComponent Infos="@mapaAtual.TheMap" />
+        <InfoListComponent InfosList="@mapaAtual.VisualTasks" />
+        <InfoComponent Infos="@mapaAtual.TheVents" />
+        <InfoListComponent InfosList="@mapaAtual.Sabotage" />
+        <InfoUtilitiesComponent InfosList="@mapaAtual.Utilities" />
     }
-
 
 </div>
 
@@ -55,31 +37,29 @@
 
     protected override async Task OnInitializedAsync()
     {
-        
-        Mapas = new List<Map>();
-        Mapas = await Http.GetFromJsonAsync<List<Map>>("data/MapInfos.json");
 
+        Mapas = new List<Map>();     
+        Mapas = await Http.GetFromJsonAsync<List<Map>>($"data/{language.name}/map_infos.json");     
         GetQueryStringValues();
-        CheckName();
-
+        CheckNameMap();
         NavManager.LocationChanged += HandleLocationChanged;
 
     }
 
     //Verifca nome do mapa
-    public void CheckName()
+    public void CheckNameMap()
     {
-        mapaAtual = Mapas.Find(m => m.Title == nameMap); 
+        mapaAtual = Mapas.Find(m => m.Name == nameMap);
 
         if (mapaAtual == null)
-            mapaAtual = Mapas.Find(m => m.Title == "The Skeld");
+            mapaAtual = Mapas.Find(m => m.Name == "The Skeld");
     }
 
     //atualiza na mesma pagina a query string
     void HandleLocationChanged(object sender, LocationChangedEventArgs e)
     {
         GetQueryStringValues();
-        CheckName();
+        CheckNameMap();
         StateHasChanged();
     }
 

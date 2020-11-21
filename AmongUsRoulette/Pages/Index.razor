@@ -2,18 +2,19 @@
 @inject HttpClient Http
 @using Models
 @using BlazorComponentUtilities
+@inject AmongUsRoulette.Shared.Utils.CurrentLanguage language;
 
 
-<div class="container-primario container ">
+<div id="Teste" class="container-primario container ">
     <div class="container-roleta">
 
         <div class="centralizar">
-            <h1>Roulette</h1>
+            <h1>Roulette @language.name</h1>
         </div>
- 
-         
+
+
         <Roleta IsActive="ativar"></Roleta>
-         
+
         <div style="@desativarBotao" class="centralizar">
             <div class="button">
                 <a @onclick="Girar" type="button">Spin</a>
@@ -21,15 +22,15 @@
         </div>
 
         <p>(Scroll down)</p>
-  
+
     </div>
 </div>
 
 
 <div class="container-sucundario container ">
-        
-    <ScrollToMode/>
- 
+
+    <ScrollToMode />
+
     <div class="container-modos">
 
         @foreach (var i in Modos)
@@ -127,8 +128,8 @@
             </div>
         }
     </div>
-   
-  
+
+
 
 </div>
 
@@ -143,7 +144,7 @@
     protected override async Task OnInitializedAsync()
     {
         Modos = new List<Modo>();
-        Modos = await Http.GetFromJsonAsync<List<Modo>>("data/modos.json");
+        Modos = await Http.GetFromJsonAsync<List<Modo>>($"data/{language.name}/modos.json"); 
     }
 
 
@@ -156,13 +157,11 @@
         await Task.Delay(1000);
         setBotao(ativar);
         this.StateHasChanged();
-
-
     }
 
     private void setBotao(bool isOn)
     {
-        if(isOn)
+        if (isOn)
         {
             desativarBotao = StyleBuilder.Empty()
       .AddStyle("pointer-events", "none", when: true)

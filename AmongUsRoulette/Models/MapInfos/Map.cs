@@ -2,19 +2,22 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
-using AmongUsRoulette.Models.MapInfos;
 
-namespace AmongUsRoulette.Models
+namespace AmongUsRoulette.Models.MapInfos
 {
     public class Map
     {
         public Map()
         {
-            Infos = new List<MapInfo>();
+            Utilities = new List<InfoListModel>();
         }
 
-        public string Title { get; set; }
-        public List<MapInfo> Infos { get; set; }
+        public string Name { get; set; }
+        public InfoModel TheMap { get; set; }
+        public InfoListModel VisualTasks { get; set; }
+        public InfoModel TheVents { get; set; }
+        public InfoListModel Sabotage { get; set; }
+        public List<InfoListModel> Utilities { get; set; }
 
     }
 }

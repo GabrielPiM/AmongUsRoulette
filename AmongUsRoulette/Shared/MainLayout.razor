@@ -1,14 +1,13 @@
 ﻿@inherits LayoutComponentBase
-@inject NavigationManager Navigation
-@inject IJSRuntime JSRuntime
 @using AmongUsRoulette.Shared.Base
 
 
 <div class="container">
+    <LanguageSelectorComponent />
     <Header />
     @Body
-    <Anchor />
     <Footer />
+    <Anchor />
 </div>
 
 
