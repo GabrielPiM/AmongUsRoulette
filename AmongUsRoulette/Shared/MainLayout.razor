@@ -1,17 +1,25 @@
 ﻿@inherits LayoutComponentBase
 @using AmongUsRoulette.Shared.Base
+@inject AmongUsRoulette.Shared.Utils.CurrentLanguage language;
 
 
 <div class="container">
-    <LanguageSelectorComponent />
-    <Header />
-    @Body
-    <Footer />
-    <Anchor />
+
+    @if (language.isDone)
+    {
+        <Header />
+        @Body
+        <Footer />
+        <Anchor />
+    }
+
 </div>
 
+@code{
 
+    protected override async Task OnInitializedAsync()
+    {
+        await  language.Start();
 
-
-
-
+    }
+}

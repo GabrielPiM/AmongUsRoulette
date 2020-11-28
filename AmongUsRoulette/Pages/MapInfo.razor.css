@@ -7,7 +7,7 @@
     flex-wrap: wrap;
     padding: 15em;
     padding-top: 5em;
-   
+   font-family:Arial, Helvetica, sans-serif;
 }
 
 .centralizar {
@@ -20,6 +20,7 @@ h1 {
     font-size: 3.5em;
     font-weight: 600;
     margin-bottom: 1em;
+    font-family: 'in_your_face_joffrey_medium';
 }
 
 

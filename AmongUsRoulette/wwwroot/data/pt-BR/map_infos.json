@@ -2,94 +2,57 @@
   {
     "Name": "The Skeld",
     "TheMap": {
-      "Title": "Info BR",
-      "Info": " Esse e o tal do mula.",
-      "Img": " "
+      "Title": "O Mapa",
+      "Info": "Skeld \u00E9 o principal mapa do \u201Camong us\u201D, possui 14 salas diferentes e seu tamanho \u00E9 m\u00E9dio em compara\u00E7\u00E3o aos outros mapas.",
+      "Img": "imgs/map_info/the_skeld/mapa.png"
     },
     "VisualTasks": {
-      "Title": "List Model",
+      "Title": "Tarefas Visuais",
       "Infos": [
-        "info 1",
-        "info 2"
+        "1 - Lixo",
+        "2 - Meteoros",
+        "3 - Escudos",
+        "4 - Scam"
       ],
-      "Img": " "
+      "Img": "imgs/map_info/the_skeld/visual_tasks.png"
     },
     "TheVents": {
-      "Title": "Info Model",
-      "Info": " ",
-      "Img": " "
+      "Title": "As Ventila\u00E7\u00F5es",
+      "Info": "Possui 14 vents no total e 6 sub-sistemas de vents que se interligam.",
+      "Img": "imgs/map_info/the_skeld/vents.png"
     },
     "Sabotage": {
-      "Title": "List Model",
+      "Title": "Sabotagem",
       "Infos": [
-        "info 1",
-        "info 2"
+        "Reator",
+        "O2",
+        "El\u00E9trica",
+        "Comunica\u00E7\u00F5es",
+        "Portas"
       ],
-      "Img": " "
+      "Img": "imgs/map_info/the_skeld/impostor.png"
     },
     "Utilities": [
       {
-        "Title": "Utilities",
+        "Title": "Utilidades",
         "Infos": [
-          "info 1",
-          "info 2"
+          "Admin"
         ],
-        "Img": " "
+        "Img": "imgs/map_info/the_skeld/admin.png"
       },
       {
-        "Title": "List Model",
+        "Title": "Utilidades",
         "Infos": [
-          "info 1",
-          "info 2"
+          "C\u00E2meras"
         ],
-        "Img": " "
-      }
-    ]
-  },
-  {
-    "Name": " ",
-    "TheMap": {
-      "Title": "Info Model",
-      "Info": " ",
-      "Img": " "
-    },
-    "VisualTasks": {
-      "Title": "List Model",
-      "Infos": [
-        "info 1",
-        "info 2"
-      ],
-      "Img": " "
-    },
-    "TheVents": {
-      "Title": "Info Model",
-      "Info": " ",
-      "Img": " "
-    },
-    "Sabotage": {
-      "Title": "List Model",
-      "Infos": [
-        "info 1",
-        "info 2"
-      ],
-      "Img": " "
-    },
-    "Utilities": [
-      {
-        "Title": "Utilities",
-        "Infos": [
-          "info 1",
-          "info 2"
-        ],
-        "Img": " "
+        "Img": "imgs/map_info/the_skeld/cameras_info.png"
       },
       {
-        "Title": "List Model",
+        "Title": "Utilidades",
         "Infos": [
-          "info 1",
-          "info 2"
+          "C\u00E2meras no mapa"
         ],
-        "Img": " "
+        "Img": "imgs/map_info/the_skeld/cameras.png"
       }
     ]
   }

@@ -1,0 +1,18 @@
+{
+  "Title": "Roulette",
+  "ButtonText": "Spin",
+  "ScrollText": "Scroll Down",
+  "ModeSelect": "Mode Select",
+  "Modo": {
+    "RecommendConfig": "Recommended Configuration",
+    "HowToPlay": "How to Play",
+    "Impostor": "Impostor",
+    "Crewmate": "Crewmate"
+  },
+  "Footer": {
+    "MadeWith": "Made with Love.",
+    "Disclaimer": "this site is not subsidized in any way by the owner of the game",
+    "Privacy": "Privacy Policy",
+    "Contact": "Contatc:"
+  }
+}

@@ -1,0 +1,18 @@
+{
+  "Title": "Roleta",
+  "ButtonText": "Girar",
+  "ScrollText": "Role para baixo",
+  "ModeSelect": "Selecionar Modo",
+  "Modo": {
+    "RecommendConfig": "Configura\u00E7\u00F5es Recomendadas",
+    "HowToPlay": "Como Jogar",
+    "Impostor": "Impostor",
+    "Crewmate": "Tripulante"
+  },
+  "Footer": {
+    "MadeWith": "Feito com Amor.",
+    "Disclaimer": "Este site n\u00E3o \u00E9 subsidiando em nenhuma forma pelo dono do jogo ",
+    "Privacy": "Pol\u00EDtica de Privacidade",
+    "Contact": "Contato:"
+  }
+}

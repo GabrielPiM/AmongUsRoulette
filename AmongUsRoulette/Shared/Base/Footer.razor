@@ -1,14 +1,33 @@
-﻿<div class="footer">
+﻿@inject HttpClient Http
+@inject AmongUsRoulette.Shared.Utils.CurrentLanguage language;
+@using Models.IndexInfos
+
+@if (language.isDone)
+{
+   
+<div class="footer">
     <div class="centralizar">
-        <p>Made with love.</p>
+        <p>@Infos.Footer.MadeWith</p>
     </div>
     <div class="centralizar">
-        <p>this site is not subsidized in any way by the owner of the game "Among Us" <a target="_blank" href="http://www.innersloth.com/">innersloth.</a></p>
+        <p>@Infos.Footer.Disclaimer "Among Us" <a target="_blank" href="http://www.innersloth.com/">innersloth.</a></p>
     </div>
     <div class="centralizar">
-        <p> <a target="_blank" href="https://www.privacypolicygenerator.info/live.php?token=3sRLR41lHAGDuF9l51ZaqvfJ9pUsBmyc">Privacy Policy</a></p>
+        <p> <a target="_blank" href="https://www.privacypolicygenerator.info/live.php?token=3sRLR41lHAGDuF9l51ZaqvfJ9pUsBmyc">@Infos.Footer.Privacy</a></p>
     </div>
     <div class="centralizar">
-        <address><a href="mailto:contact.amongroll@gmail.com">contact: contact.amongroll@gmail.com</a></address>
+        <address><a href="mailto:contact.amongroll@gmail.com">@Infos.Footer.Contact contact.amongroll@gmail.com</a></address>
     </div>
 </div>
+}
+
+
+@code{
+    private IndexInfos Infos;
+
+    protected override async Task OnInitializedAsync()
+    {
+        Infos = new IndexInfos();
+        Infos = await Http.GetFromJsonAsync<IndexInfos>($"data/{language.name}/index_infos.json");
+    }
+}

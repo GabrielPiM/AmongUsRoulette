@@ -1,12 +1,14 @@
 ﻿@page "/map"
 @using AmongUsRoulette.Models.MapInfos
 @using AmongUsRoulette.Shared.MapInfo
-@inject AmongUsRoulette.Shared.Utils.CurrentLanguage language
 
+@inject AmongUsRoulette.Shared.Utils.CurrentLanguage language
 @inject HttpClient Http
 @inject NavigationManager NavManager
 
 @implements IDisposable
+
+
 
 <div class="map-container">
 
@@ -31,25 +33,24 @@
 
 @code {
 
-    public string nameMap;
+    public string mapName;
     private List<Map> Mapas;
     private Map mapaAtual;
 
     protected override async Task OnInitializedAsync()
-    {
-
-        Mapas = new List<Map>();     
-        Mapas = await Http.GetFromJsonAsync<List<Map>>($"data/{language.name}/map_infos.json");     
+    {  
+        Mapas = new List<Map>();
+        Mapas = await Http.GetFromJsonAsync<List<Map>>($"data/{language.name}/map_infos.json");
+    
         GetQueryStringValues();
-        CheckNameMap();
+        CheckMapName();
         NavManager.LocationChanged += HandleLocationChanged;
-
     }
 
     //Verifca nome do mapa
-    public void CheckNameMap()
+    public void CheckMapName()
     {
-        mapaAtual = Mapas.Find(m => m.Name == nameMap);
+        mapaAtual = Mapas.Find(m => m.Name == mapName);
 
         if (mapaAtual == null)
             mapaAtual = Mapas.Find(m => m.Name == "The Skeld");
@@ -59,14 +60,14 @@
     void HandleLocationChanged(object sender, LocationChangedEventArgs e)
     {
         GetQueryStringValues();
-        CheckNameMap();
+        CheckMapName();
         StateHasChanged();
     }
 
-    //get query string
+    //faz o get da query string, nesse caso o nome do mapa selecionado, e atribui para mapName
     void GetQueryStringValues()
     {
-        AmongUsRoulette.Shared.Utils.NavigationManagerExtensions.TryGetQueryString<string>(NavManager, "nameMap", out nameMap);
+        AmongUsRoulette.Shared.Utils.NavigationManagerExtensions.TryGetQueryString<string>(NavManager, "Name", out mapName);
     }
 
     public void Dispose()
