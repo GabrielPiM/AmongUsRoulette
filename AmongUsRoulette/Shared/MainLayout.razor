@@ -3,6 +3,7 @@
 @inject AmongUsRoulette.Shared.Utils.CurrentLanguage language;
 
 
+
 <div class="container">
 
     @if (language.isDone)
@@ -19,7 +20,7 @@
 
     protected override async Task OnInitializedAsync()
     {
-        await  language.Start();
+        await language.Start();     
 
     }
 }

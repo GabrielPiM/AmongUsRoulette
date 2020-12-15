@@ -1,4 +1,4 @@
-﻿.scrollToMode{
+﻿.scrollToMode {
     max-width: 80%;
     color: white;
     font-size: 2em;
@@ -17,10 +17,26 @@
     flex-wrap: wrap;
 }
 
-.menuScroll li {
-    display: inline;
-    margin: 0.5em;
-}
+    .menuScroll li {
+        display: inline;
+        margin: 0.5em;
+    }
+
+
+
+
+        .menuScroll li a {
+            color: white;
+            text-decoration: none;
+            border: solid white 1px;
+            border-radius: 50%;
+            padding: 10px;
+            margin: 15px;
+        }
+
+            .menuScroll li a:hover {
+                background-color: Red;
+            }
 
 .centralizar] {
     width: 100%;
@@ -39,7 +55,8 @@
 @media screen and (max-width: 1050px) {
     .menuScroll {
         font-size: 3.5em;
-        justify-content: unset;
+        justify-content: center;
+        padding: 0;
     }
 
     .centralizar {

@@ -42,7 +42,7 @@ li {
 }
 
 img {
-    max-height: 50em;
+
     max-width: 50em;
     min-height: 25em;
     min-width: 25em;
@@ -53,18 +53,23 @@ h3 {
     font-size: 2.5em;
     font-weight: 100;
 }
-.map-group{
-
+.map-group {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 @media screen and (max-width: 1050px) {
-    .map-body {
-    }
 
-    .map-info {
+    h3 {
+        font-size: 4.5em;
+
+    }
+    li {
+        font-size: 1.5em;
     }
 
     img {
-        width: 100%;
+        width: 50em;
         height: auto;
     }
 }

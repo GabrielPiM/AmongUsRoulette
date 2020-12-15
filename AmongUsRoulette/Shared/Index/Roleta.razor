@@ -18,10 +18,9 @@
 
 
 @code {
-
-    public string classToRender;
     [Parameter]
-    public bool IsActive { get; set; }
+    public bool isRoletaActive { get; set; }
+    public string classToRender;
     public bool isFirst { get; set; }
     public Random r;
     public int newRandom = 0;
@@ -34,7 +33,7 @@
         oldRandom = newRandom;
         newRandom=r.Next(100,600);
 
-        if (IsActive)
+        if (isRoletaActive)
         {
             Girar();
             isFirst = false;
@@ -58,7 +57,7 @@
     {
         classToRender = StyleBuilder.Empty()
               .AddStyle("transform", $" translate({oldRandom}em, 0px)", when: false)
-              .Build(); 
+              .Build();
     }
 
 

@@ -45,15 +45,9 @@
         "Infos": [
           "C\u00E2meras"
         ],
-        "Img": "imgs/map_info/the_skeld/cameras_info.png"
-      },
-      {
-        "Title": "Utilidades",
-        "Infos": [
-          "C\u00E2meras no mapa"
-        ],
         "Img": "imgs/map_info/the_skeld/cameras.png"
       }
+
     ]
   }
 ]

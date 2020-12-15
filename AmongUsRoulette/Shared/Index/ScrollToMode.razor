@@ -1,16 +1,16 @@
 ﻿
-<div class="container-scroll">
+<div id="scroll" class="container-scroll">
     <div class="scrollToMode">
         <div class="centralizar">
             Mode Select
         </div>
         <ul class="menuScroll">
-            <li ><a href="#Teste">Teste </a></li>
+            @foreach (string name in ModosNames)
+            {
+                <li><a href="#@name.Replace(" ","")">@name </a></li>
+            }
         </ul>
 
     </div>
 </div>
 
-@code {
-
-}

@@ -1,11 +1,4 @@
 ﻿@page "/"
-@inject HttpClient Http
-@inject AmongUsRoulette.Shared.Utils.CurrentLanguage language;
-
-@using Models
-@using Models.IndexInfos
-@using BlazorComponentUtilities
-
 
 
 @if (Infos != null)
@@ -18,9 +11,9 @@
                 <h1>@Infos.Title</h1>
             </div>
 
-            <Roleta IsActive="ativar"></Roleta>
+            <Roleta isRoletaActive="isRoletaActive"></Roleta>
 
-            <div style="@desativarBotao" class="centralizar">
+            <div style="@ButtonStyle" class="centralizar">
                 <div class="button">
                     <a @onclick="Girar" type="button">@Infos.ButtonText</a>
                 </div>
@@ -41,7 +34,7 @@
             @foreach (var i in Modos)
             {
 
-                <div class="modo">
+                <div id="@i.Name.Replace(" ","")" class="modo">
 
                     <div class="centralizar">
                         <h2> @i.Name</h2>
@@ -135,53 +128,4 @@
             }
         </div>
     </div>
-}
-
-
-
-
-@code {
-    private List<Modo> Modos;
-    private IndexInfos Infos;
-    public bool ativar = false;
-    string desativarBotao;
-    string GetId(int i) => "header-" + i;
-    string GetHref(int i) => "#" + GetId(i);
-
-
-    protected override async Task OnInitializedAsync()
-    {
-        Modos = new List<Modo>();
-        Modos = await Http.GetFromJsonAsync<List<Modo>>($"data/{language.name}/modos.json");
-
-        Infos = new IndexInfos();
-        Infos = await Http.GetFromJsonAsync<IndexInfos>($"data/{language.name}/index_infos.json");
-    }
-
-    private async void Girar()
-    {
-        ativar = true;
-        setBotao(ativar);
-        await Task.Delay(5000);
-        ativar = false;
-        await Task.Delay(1000);
-        setBotao(ativar);
-        this.StateHasChanged();
-    }
-
-    private void setBotao(bool isOn)
-    {
-        if (isOn)
-        {
-            desativarBotao = StyleBuilder.Empty()
-      .AddStyle("pointer-events", "none", when: true)
-      .Build();
-        }
-
-        else
-        {
-            desativarBotao = StyleBuilder.Empty()
-      .Build();
-        }
-    }
 }

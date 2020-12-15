@@ -9,7 +9,7 @@ namespace AmongUsRoulette.Shared.Utils
 {
     public class CurrentLanguage
     {
-
+        
         private readonly IJSRuntime js;
         public string name { get; set; }
         public bool isDone { get; set; }
