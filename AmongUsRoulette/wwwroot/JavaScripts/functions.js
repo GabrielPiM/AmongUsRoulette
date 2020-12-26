@@ -12,3 +12,5 @@
 function getLanguage() {
    return navigator.language;  
 }
+
+

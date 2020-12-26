@@ -23,6 +23,7 @@ namespace AmongUsRoulette.Shared.Index
         {
             ModosNames = new List<String>();
             ModosNames = await Http.GetFromJsonAsync<List<string>>($"data/{Language.name}/modos_names.json");
+       
         }
     }
 }

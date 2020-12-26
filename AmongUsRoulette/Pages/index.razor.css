@@ -126,7 +126,14 @@
 }
 
 .modo .body .configuration span {
-    font-size: 0.9em;
+    font-size: 1em;
+    color: grey;
+}
+
+@media screen and (max-width: 1050px) {
+    .modo .body .configuration span {
+        line-height: 0.05em;
+    }
 }
 
 .modo .body .configuration p {
@@ -166,7 +173,7 @@
 
 
 .fontMais {
-    font-family: sans-serif;
+    font-family: Arial, Helvetica, sans-serif;
     font-size: 0.9em;
 }
 

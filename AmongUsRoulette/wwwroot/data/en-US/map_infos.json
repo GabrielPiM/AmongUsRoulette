@@ -2,95 +2,179 @@
   {
     "Name": "The Skeld",
     "TheMap": {
-      "Title": "Info us",
-      "Info": " Esse e o tal do mula.",
-      "Img": " "
+      "Title": "The map",
+      "Info": "Skeld is the main map of \u201Camong us\u201D, it has 14 different rooms and its size is average in comparison to the other maps.",
+      "Img": "imgs/map_info/the_skeld/mapa.png"
     },
     "VisualTasks": {
-      "Title": "List Model",
+      "Title": "Visual Tasks",
       "Infos": [
-        "info 1",
-        "info 2"
+        "1 - Trash",
+        "2 - Meteors",
+        "3 - Shields",
+        "4 - Scam"
       ],
-      "Img": " "
+      "Img": "imgs/map_info/the_skeld/visual_tasks.png"
     },
     "TheVents": {
-      "Title": "Info Model",
-      "Info": " ",
-      "Img": " "
+      "Title": "The Vents",
+      "Info": "It has 14 vents in total and 6 vents sub-systems that are interconnected.",
+      "Img": "imgs/map_info/the_skeld/vents.png"
     },
     "Sabotage": {
-      "Title": "List Model",
+      "Title": "Sabotage",
       "Infos": [
-        "info 1",
-        "info 2"
+        "Reactor",
+        "O2",
+        "Electric",
+        "Communications",
+        "Doors"
       ],
-      "Img": " "
+      "Img": "imgs/map_info/the_skeld/impostor.png"
     },
     "Utilities": [
       {
         "Title": "Utilities",
         "Infos": [
-          "info 1",
-          "info 2"
+          "Admin"
         ],
-        "Img": " "
+        "Img": "imgs/map_info/the_skeld/admin.png"
       },
       {
-        "Title": "List Model",
+        "Title": "Utilities",
         "Infos": [
-          "info 1",
-          "info 2"
+          "Cameras"
         ],
-        "Img": " "
+        "Img": "imgs/map_info/the_skeld/cameras.png"
       }
+
     ]
   },
   {
-    "Name": " ",
+    "Name": "Mira HQ",
     "TheMap": {
-      "Title": "Info Model",
-      "Info": " ",
-      "Img": " "
+      "Title": "The map",
+      "Info": "Mira HQ is a medium map and very fun to play as an imposter or crew, due to the great amount of utilities for both. It has 12 different rooms and has no cameras.",
+      "Img": "imgs/map_info/mira_hq/mapa.png"
     },
     "VisualTasks": {
-      "Title": "List Model",
+      "Title": "Visual Tasks",
       "Infos": [
-        "info 1",
-        "info 2"
+        "Scam"
       ],
-      "Img": " "
+      "Img": "imgs/map_info/mira_hq/visual_tasks.png "
     },
     "TheVents": {
-      "Title": "Info Model",
-      "Info": " ",
-      "Img": " "
+      "Title": "The Vents",
+      "Info": "It has 11 vents in total and ALL are interconnected, it is a real playground for the impostor to play as much as he wants with his victims !!! hahaha ..",
+      "Img": "imgs/map_info/mira_hq/vents.png"
     },
     "Sabotage": {
-      "Title": "List Model",
+      "Title": "Sabotage",
       "Infos": [
-        "info 1",
-        "info 2"
+        "Reactor",
+        "O2",
+        "Electric",
+        "Communications"     
       ],
-      "Img": " "
+      "Img": "imgs/map_info/mira_hq/impostor.png"
     },
     "Utilities": [
       {
         "Title": "Utilities",
         "Infos": [
-          "info 1",
-          "info 2"
+          "Admin"
         ],
-        "Img": " "
+        "Img": "imgs/map_info/mira_hq/admin.png"
       },
       {
-        "Title": "List Model",
+        "Title": "Utilities",
         "Infos": [
-          "info 1",
-          "info 2"
+          "Sensors"
         ],
-        "Img": " "
+        "Img": "imgs/map_info/mira_hq/sensores.png"
       }
     ]
+  },
+
+
+  {
+    "Name": "Polus",
+    "TheMap": {
+      "Title": "The map",
+      "Info": "Polus is the largest map of Among Us today, and it is the map you want to play if you are the impostor, as you will easily be able to escape from the crime scene. It has 11 different rooms.\t",
+      "Img": "imgs/map_info/polus/mapa.png"
+    },
+    "VisualTasks": {
+      "Title": "Visual Tasks",
+      "Infos": [
+        "Scam",
+        "Meteors"
+
+      ],
+      "Img": "imgs/map_info/polus/tarefas_visuais.png "
+    },
+    "TheVents": {
+      "Title": "The Vents",
+      "Info": "It has 12 vents in total and 4 sub-systems of vents that interconnect.",
+      "Img": "imgs/map_info/polus/vents.png"
+    },
+    "Sabotage": {
+      "Title": "Sabotage",
+      "Infos": [
+        "Reactor (Reset Seismic Stabilizers)",
+        "Electrical",
+        "Communications",
+        "Doors"
+      ],
+      "Img": "imgs/map_info/polus/sabotagem.png"
+    },
+    "Utilities": [
+      {
+        "Title": "Utilities",
+        "Infos": [
+          "Cameras"
+        ],
+        "Img": "imgs/map_info/polus/cameras.png"
+      },
+      {
+        "Title": "Utilities",
+        "Infos": [
+          "Vitals"
+        ],
+        "Img": "imgs/map_info/polus/vitais.png"
+      },
+      {
+        "Title": "Utilities",
+        "Infos": [
+          "Admin"
+        ],
+        "Img": "imgs/map_info/polus/admin.png"
+      },
+      {
+        "Title": "Utilities",
+        "Infos": [
+          "The doors must be opened by the players."
+        ],
+        "Img": "imgs/map_info/polus/portas.png"
+      },
+      {
+        "Title": "Utilities",
+        "Infos": [
+          "Thermometer 1 is always cold, 2 hot."
+        ],
+        "Img": "imgs/map_info/polus/termometro.png"
+      }
+
+    ]
   }
+
+
+
+
+
+
+
+
+
 ]

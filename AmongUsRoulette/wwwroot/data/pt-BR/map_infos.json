@@ -49,5 +49,134 @@
       }
 
     ]
+  },
+  {
+    "Name": "Mira HQ",
+    "TheMap": {
+      "Title": "O Mapa",
+      "Info": "Mira HQ \u00E9 um mapa m\u00E9dio e muito divertido de se jogar sendo impostor ou tripulante, devido a grande quantidade de utilidades para ambos. Ele possui 12 salas diferentes e n\u00E3o possui c\u00E2meras.",
+      "Img": "imgs/map_info/mira_hq/mapa.png"
+    },
+    "VisualTasks": {
+      "Title": "Tarefas Visuais",
+      "Infos": [
+        "Scam"
+
+      ],
+      "Img": "imgs/map_info/mira_hq/visual_tasks.png "
+    },
+    "TheVents": {
+      "Title": "As Ventila\u00E7\u00F5es",
+      "Info": "Possui 11 vents no total e TODAS s\u00E3o interligadas, \u00E9 um verdadeiro parquinho para o impostor brincar o quanto quiser com suas v\u00EDtimas!!! hahaha..",
+      "Img": "imgs/map_info/mira_hq/vents.png"
+    },
+    "Sabotage": {
+      "Title": "Sabotagem",
+      "Infos": [
+        "Reator",
+        "O2",
+        "El\u00E9trica",
+        "Comunica\u00E7\u00F5es",
+        "Portas"
+      ],
+      "Img": "imgs/map_info/mira_hq/impostor.png"
+    },
+    "Utilities": [
+      {
+        "Title": "Utilidades",
+        "Infos": [
+          "Admin"
+        ],
+        "Img": "imgs/map_info/mira_hq/admin.png"
+      },
+      {
+        "Title": "Utilidades",
+        "Infos": [
+          "Sensores"
+        ],
+        "Img": "imgs/map_info/mira_hq/sensores.png"
+      }
+    ]
+  },
+
+
+  {
+    "Name": "Polus",
+    "TheMap": {
+      "Title": "O Mapa",
+      "Info": "Polus atualmente \u00E9 o maior mapa do \u201CAmong Us\u201D , e \u00E9 o mapa que voc\u00EA quer jogar se cair de impostor, pois voc\u00EA vai conseguir facilmente fugir da cena do crime. Ele possui 11 salas diferentes.\t",
+      "Img": "imgs/map_info/polus/mapa.png"
+    },
+    "VisualTasks": {
+      "Title": "Tarefas Visuais",
+      "Infos": [
+        "Scam",
+        "Meteoros"
+
+      ],
+      "Img": "imgs/map_info/polus/tarefas_visuais.png "
+    },
+    "TheVents": {
+      "Title": "As Ventila\u00E7\u00F5es",
+      "Info": "Possui 12 vents no total e 4 sub-sistemas de vents que se interligam.\r\n",
+      "Img": "imgs/map_info/polus/vents.png"
+    },
+    "Sabotage": {
+      "Title": "Sabotagem",
+      "Infos": [
+        "Reator (Reiniciar Estabilizadores S\u00EDsmicos)\t",    
+        "El\u00E9trica",
+        "Comunica\u00E7\u00F5es",
+        "Portas"
+      ],
+      "Img": "imgs/map_info/polus/sabotagem.png"
+    },
+    "Utilities": [
+      {
+        "Title": "Utilidades",
+        "Infos": [
+          "C\u00E2meras"
+        ],
+        "Img": "imgs/map_info/polus/cameras.png"
+      },
+      {
+        "Title": "Utilidades",
+        "Infos": [
+          "Vitais"
+        ],
+        "Img": "imgs/map_info/polus/vitais.png"
+      },
+      {
+        "Title": "Utilidades",
+        "Infos": [
+          "Admin"
+        ],
+        "Img": "imgs/map_info/polus/admin.png"
+      },
+      {
+        "Title": "Utilidades",
+        "Infos": [
+          "As portas precisam ser abertas pelos jogadores."
+        ],
+        "Img": "imgs/map_info/polus/portas.png"
+      },
+      {
+        "Title": "Utilidades",
+        "Infos": [
+          "\r\nTerm\u00F4metro 1 sempre frio, 2 quente."
+        ],
+        "Img": "imgs/map_info/polus/termometro.png"
+      }
+
+    ]
   }
+
+
+
+
+
+
+
+
+
 ]

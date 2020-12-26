@@ -1,30 +1,30 @@
 [
   {
-    "Name": "Color Blind",
+    "Name": "Sem Cores",
     "Img": "imgs/Roleta/sem_cor_noname.png",
-    "Map": "Optional",
-    "Imposter": "Optional",
-    "ConfirmEjects": "Off",
-    "NumberOfEmergencyMeetings": "Optional",
-    "EmergencyCooldown": "Optional",
-    "PlayerSpeed": "Optional",
-    "DiscussionTime": "Optional",
-    "VotingTime": "Optional",
-    "CrewmateVision": "Optional",
-    "ImposterVision": "Optional",
-    "KillCooldown": "Optional",
-    "KillDistance": "Optional",
-    "VisualTasks": "on",
-    "CommonTasks": "Optional",
-    "LongTasks": "Optional",
-    "ShortTasks": "Optional",
+    "Map": "Opcional",
+    "Imposter": "Opcional",
+    "ConfirmEjects": "n\u00E3o",
+    "NumberOfEmergencyMeetings": "Opcional",
+    "EmergencyCooldown": "Opcional",
+    "PlayerSpeed": "Opcional",
+    "DiscussionTime": "Opcional",
+    "VotingTime": "Opcional",
+    "CrewmateVision": "Opcional",
+    "ImposterVision": "Opcional",
+    "KillCooldown": "Opcional",
+    "KillDistance": "Opcional",
+    "VisualTasks": "sim",
+    "CommonTasks": "Opcional",
+    "LongTasks": "Opcional",
+    "ShortTasks": "Opcional",
     "HowToPlayImpostor": [
     ],
     "HowToPlayCrewmate": [
     ],
     "HowToPlayBoth": [
-      "Must configure their monitors to use Grayscale Mode. (black and white).",
-      "Must use indistinguishable names. Ex: 010101, IIIIIIIII."
+      "Devem configurar seus monitores para exibir s\u00F3 mente preto e branco.",
+      "Devem utilizar nomes indistingu\u00EDveis. Ex: 010101, IIIIIIIII."
     ]
   },
   {
@@ -32,105 +32,107 @@
     "Img": "imgs/Roleta/it_noname.png",
     "Map": "Mira HQ",
     "Imposter": "1",
-    "ConfirmEjects": "Off",
+    "ConfirmEjects": "n\u00E3o",
     "NumberOfEmergencyMeetings": "0",
     "EmergencyCooldown": "0s",
-    "PlayerSpeed": "1,25x to 1,5x",
+    "PlayerSpeed": "1,25x at\u00E9 1,5x",
     "DiscussionTime": "0s",
     "VotingTime": "0s",
-    "CrewmateVision": "Optional",
-    "ImposterVision": "Optional",
+    "CrewmateVision": "Opcional",
+    "ImposterVision": "Opcional",
     "KillCooldown": "10s",
-    "KillDistance": "short/medium",
+    "KillDistance": "curta/m\u00E9dia",
     "VisualTasks": "no",
-    "CommonTasks": "Optional",
-    "LongTasks": "Optional",
-    "ShortTasks": "Optional",
+    "CommonTasks": "Opcional",
+    "LongTasks": "Opcional",
+    "ShortTasks": "Opcional",
     "HowToPlayImpostor": [
-      "Impostor reveals themselves.",
-      "The impostor can only move through vents.",
-      "The impostor can only walk in the vent room he just left.",
-      "The impostor can only kill someone within 5 seconds after leaving the vent.",
-      "No sabotaging.",
-      "Wins by killing everyone."
+      "O impostor se revela.",
+      "O impostor s\u00F3  pode se movimentar pelas vents.",
+      "O impostor s\u00F3  pode andar na sala que acabou de sair da vent.",
+      "O impostor s\u00F3  pode matar algu\u00E9m 5 segundos ap\u00F3s sair da vent.",
+      "Sem sabotagens.",
+      "Ganha matando todos."
 
     ],
     "HowToPlayCrewmate": [
-      "Wins by finishing all tasks."
+      "Ganha fazendo todas as tarefas."
     ],
     "HowToPlayBoth": [
-      "No reporting bodies."
+      "Sem reportar corpos."
     ]
   },
   {
-    "Name": "Hide and Seek",
+    "Name": "Esconde-Esconde",
     "Img": "imgs/Roleta/esconde_esconde_noname.png",
-    "Map": "Optional",
+    "Map": "Opcional",
     "Imposter": "1",
-    "ConfirmEjects": "Off",
+    "ConfirmEjects": "n\u00E3o",
     "NumberOfEmergencyMeetings": "0",
     "EmergencyCooldown": "0s",
     "PlayerSpeed": "1,75x",
     "DiscussionTime": "0s",
     "VotingTime": "0s",
     "CrewmateVision": "1,5x",
-    "ImposterVision": "0,25 to 0,5",
-    "KillCooldown": "10s to 30s",
-    "KillDistance": "short",
-    "VisualTasks": "Off",
+    "ImposterVision": "0,25 at\u00E9 0,5",
+    "KillCooldown": "10s at\u00E9 30s",
+    "KillDistance": "curta",
+    "VisualTasks": "n\u00E3o",
     "CommonTasks": "0",
     "LongTasks": "0",
     "ShortTasks": "1",
     "HowToPlayImpostor": [
-      "Impostor reveals themselves.",
-      "No sabotaging.",
-      "No venting."
+      "O impostor se revela.",
+      "Sem sabotagens.",
+      "Sem utilizar vents."
     ],
     "HowToPlayCrewmate": [
-      "No tasks.",
-      "Last alive wins."
+      "Sem fazer tarefas.",
+      "\u00DAltimo vivo ganha."
     ],
     "HowToPlayBoth": [
-      "No reporting bodies."
+      "Sem reportar corpos."
     ]
   },
+
   {
     "Name": "Slenderman",
     "Img": "imgs/Roleta/slenderman_noname.png",
-    "Map": "Optional",
+    "Map": "Opcional",
     "Imposter": "1",
-    "ConfirmEjects": "Off",
+    "ConfirmEjects": "n\u00E3o",
     "NumberOfEmergencyMeetings": "0",
     "EmergencyCooldown": "0s",
-    "PlayerSpeed": "1x to 1,75x",
+    "PlayerSpeed": "1x at\u00E9 1,75x",
     "DiscussionTime": "0s",
     "VotingTime": "0s",
     "CrewmateVision": "0,25x",
     "ImposterVision": "5x",
-    "KillCooldown": "25s to 35s",
-    "KillDistance": "short/medium",
+    "KillCooldown": "25s at\u00E9 35s",
+    "KillDistance": "curta/m\u00E9dia",
     "VisualTasks": "no",
     "CommonTasks": "2",
     "LongTasks": "1",
     "ShortTasks": "5",
     "HowToPlayImpostor": [
-      "Impostor reveals themselves.",
-      "No sabotaging.",
-      "Wins by killing everyone."
+      "O impostor se revela.",
+      "Sem sabotagens.",
+      "Ganha matando todos."
     ],
     "HowToPlayCrewmate": [
-      "Wins by completing the 8 tasks (pages in slenderman game)."
+      "Ganha completando as 8 tasks (8 folhas do jogo slenderman)."
     ],
     "HowToPlayBoth": [
-      "No reporting bodies."
+      "Sem reportar corpos."
     ]
   },
+
   {
-    "Name": "Tag",
+    "Name": "Pega-Pega",
     "Img": "imgs/Roleta/pega_pega_noname.png",
-    "Map": "Optional",
+    "Map": "Opcional",
     "Imposter": "1",
-    "ConfirmEjects": "Off",
+    "ConfirmEjects": "n\u00E3o",
     "NumberOfEmergencyMeetings": "0",
     "EmergencyCooldown": "0s",
     "PlayerSpeed": "3x",
@@ -139,23 +141,22 @@
     "CrewmateVision": "5x",
     "ImposterVision": "5x",
     "KillCooldown": "10s",
-    "KillDistance": "short",
+    "KillDistance": "curta",
     "VisualTasks": "no",
     "CommonTasks": "0",
     "LongTasks": "0",
     "ShortTasks": "1",
     "HowToPlayImpostor": [
-      "Impostor reveals themselves.",
-      "No sabotaging."
+      "O impostor se revela.",
+      "Sem sabotagens."
     ],
     "HowToPlayCrewmate": [
-      "No tasks.",
-      "Last alive wins."
+      "Sem fazer tarefas.",
+      "\u00DAltimo vivo ganha."
 
     ],
     "HowToPlayBoth": [
-      "No reporting bodies."
+      "Sem reportar corpos."
     ]
   }
-
 ]

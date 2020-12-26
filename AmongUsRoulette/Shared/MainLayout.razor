@@ -20,7 +20,8 @@
 
     protected override async Task OnInitializedAsync()
     {
-        await language.Start();     
+        await language.Start();
+        Console.WriteLine(language.name);
 
     }
 }
