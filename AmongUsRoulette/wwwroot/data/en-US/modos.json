@@ -1,7 +1,7 @@
 [
   {
     "Name": "Color Blind",
-    "Img": "imgs/Roleta/sem_cor_noname.png",
+    "Img": "imgs/modos/sem_cor_noname.png",
     "Map": "Optional",
     "Imposter": "Optional",
     "ConfirmEjects": "Off",
@@ -29,7 +29,7 @@
   },
   {
     "Name": "It",
-    "Img": "imgs/Roleta/it_noname.png",
+    "Img": "imgs/modos/it_noname.png",
     "Map": "Mira HQ",
     "Imposter": "1",
     "ConfirmEjects": "Off",
@@ -64,7 +64,7 @@
   },
   {
     "Name": "Hide and Seek",
-    "Img": "imgs/Roleta/esconde_esconde_noname.png",
+    "Img": "imgs/modos/esconde_esconde_noname.png",
     "Map": "Optional",
     "Imposter": "1",
     "ConfirmEjects": "Off",
@@ -96,7 +96,7 @@
   },
   {
     "Name": "Slenderman",
-    "Img": "imgs/Roleta/slenderman_noname.png",
+    "Img": "imgs/modos/slenderman_noname.png",
     "Map": "Optional",
     "Imposter": "1",
     "ConfirmEjects": "Off",
@@ -127,7 +127,7 @@
   },
   {
     "Name": "Tag",
-    "Img": "imgs/Roleta/pega_pega_noname.png",
+    "Img": "imgs/modos/pega_pega_noname.png",
     "Map": "Optional",
     "Imposter": "1",
     "ConfirmEjects": "Off",

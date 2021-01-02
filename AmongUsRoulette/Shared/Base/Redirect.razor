@@ -1,0 +1,14 @@
+﻿@inject NavigationManager nav
+
+
+@code {
+
+        [Parameter]
+        public string page { get; set; }
+
+        protected override void OnInitialized()
+        {
+            nav.NavigateTo("/" + page);
+        }
+
+}

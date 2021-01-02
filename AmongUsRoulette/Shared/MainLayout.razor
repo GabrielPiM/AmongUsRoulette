@@ -1,6 +1,9 @@
 ﻿@inherits LayoutComponentBase
 @using AmongUsRoulette.Shared.Base
+@using AmongUsRoulette.Pages;
 @inject AmongUsRoulette.Shared.Utils.CurrentLanguage language;
+@inject AmongUsRoulette.Shared.Utils.AdBlock AdBlock;
+
 
 
 
@@ -8,20 +11,19 @@
 
     @if (language.isDone)
     {
-        <Header />
-        @Body
-        <Footer />
-        <Anchor />
+         <Header />
+          @Body
+         <Footer />
+         <Anchor />      
     }
 
 </div>
+
 
 @code{
 
     protected override async Task OnInitializedAsync()
     {
-        await language.Start();
-        Console.WriteLine(language.name);
-
+        await language.SetLanguage();
     }
 }

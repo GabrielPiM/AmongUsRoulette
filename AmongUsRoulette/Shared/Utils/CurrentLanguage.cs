@@ -24,10 +24,10 @@ namespace AmongUsRoulette.Shared.Utils
             isDone = false;
         }   
 
-        public async Task Start()
+        public async Task SetLanguage()
         {          
             AddSuppotedLanguages();
-            await SetLanguage();
+            await GetLanguage();
         }
 
         private void AddSuppotedLanguages()
@@ -36,7 +36,7 @@ namespace AmongUsRoulette.Shared.Utils
             supportedLanguages.Add("en-US");
         }
 
-        private async Task  SetLanguage()
+        private async Task  GetLanguage()
         {
             var lang = await js.InvokeAsync<string>("getLanguage");
 

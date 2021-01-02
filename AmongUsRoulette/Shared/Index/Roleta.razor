@@ -1,15 +1,15 @@
-﻿
+﻿@inject AmongUsRoulette.Shared.Utils.CurrentLanguage language
 <div class="roleta ">
     <div class="seletor"></div>
 
     <div style="@classToRender" class="dentroRoleta">
         @for (int i = 0; i < 10; i++)
         {
-            <img class="img" src="imgs/Roleta/esconde_esconde.png">
-            <img class="img" src="imgs/Roleta/sem_cor.png">
-            <img class="img" src="imgs/Roleta/slenderman.png">
-            <img class="img" src="imgs/Roleta/it.png">
-            <img class="img" src="imgs/Roleta/pega_pega.png">
+            <img class="img" src="imgs/Roleta/@language.name/esconde_esconde.png">
+            <img class="img" src="imgs/Roleta/@language.name/sem_cor.png">
+            <img class="img" src="imgs/Roleta/@language.name/slenderman.png">
+            <img class="img" src="imgs/Roleta/@language.name/it.png">
+            <img class="img" src="imgs/Roleta/@language.name/pega_pega.png">
         }
 
     </div>
