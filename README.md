@@ -1,3 +1,4 @@
+##### (Idiomas: pt-BR e en-US)
 ##### (Blazor WASM, HTML, CSS, JQUERY)
 ##### (Hospedagem blob storage + CDN Azure com https)
 
