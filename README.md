@@ -1,4 +1,5 @@
 ##### (Blazor WASM, HTML, CSS, JQUERY)
+##### (Hospedagem blob storage + CDN Azure com https)
 
 # Among Roll
 
